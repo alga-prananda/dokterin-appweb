@@ -9,7 +9,7 @@ Dokterin singkatan dari Dokter Internet merupakan sistem manajemen pasien berbas
 ### Link URL
 https://dokterin.herokuapp.com
 
-If Link Appweb error pls u can run use localhost. for database u can run file db name is patientstack_db using MySQL Workbench.
+If Link Appweb error pls u can run use localhost. for database u can run all query in file db name is patientstack_db using MySQL Workbench.
 for add data u can run all query sql in database seeds.sql using MySQL Workbench.
 
 
