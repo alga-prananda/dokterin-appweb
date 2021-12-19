@@ -3,7 +3,7 @@
 Konsultasi antara pasien dengan Dokter
 
 ### Link URL
-https://dokterin-web.herokuapp.com
+https://dokterin-appweb.herokuapp.com
 
 ### Overview
 
