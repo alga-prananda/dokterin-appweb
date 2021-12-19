@@ -1,0 +1,20 @@
+{
+    "development": {
+        "username": "root",
+        "password": "root@123",
+        "database": "patientstack_db",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "root",
+        "password": "root@123",
+        "database": "patientstack_db",
+        "host": "192.168.100.4",
+        "dialect": "mysql"
+    },
+    "production": {
+        "use_env_variable": "JAWSDB_URL",
+        "dialect": "mysql"
+    }
+}
