@@ -2,13 +2,16 @@
 
 Konsultasi antara pasien dengan Dokter
 
-### Link URL
-https://dokterin.herokuapp.com
-If Link Appweb error pls u can run use localhost.
-
 ### Overview
 
 Dokterin singkatan dari Dokter Internet merupakan sistem manajemen pasien berbasis web yang memberikan dokter dan pasien akses mudah ke rekam medis dan memungkinkan pasien dan dokter untuk berkomunikasi melalui fitur obrolan.
+
+### Link URL
+https://dokterin.herokuapp.com
+
+If Link Appweb error pls u can run use localhost. for database u can run file db name is patientstack_db using MySQL Workbench.
+for add data u can run all query sql in database seeds.sql using MySQL Workbench.
+
 
 ### Pictures
 
