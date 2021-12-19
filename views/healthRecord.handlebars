@@ -1,0 +1,137 @@
+{{> patientnav}}
+
+<!--HEADER-->
+<div class="ui main container">
+    <div class="row">
+        <div class="ui basic button">Keluar</div>
+    </div>
+    <div class="row">
+        <div class="ui items">
+            <div class="item">
+                <div class="ui tiny image">
+                    <img class="image" src="{{patient.image}}">
+                </div>
+                <div class="content">
+                    <a class="header">{{patient.first_name}} {{patient.last_name}}</a>
+                    <div class="description">
+                        <ul>
+                            <li>{{patient.street_address}}</li>
+                            <li>{{patient.city}}, {{patient.state}}, {{patient.zip}}</li>
+                            <li>{{patient.telephone}}</li>
+                            <li>{{patient.height}}</li>
+                            <li>{{patient.weight}}</li>
+                        </ul>
+                    </div>
+                    {{!-- <div class="extra">
+                    </div> --}}
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--row-->
+    <div class="ui divider"></div>
+    <div class="ui stackable grid">
+        <div class="row">
+            <table class="ui teal celled table">
+                <thead>
+                    <tr>
+                        <th>Tes</th>
+                        <th>Status</th>
+                        <th>Hasil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hitung Darah Putih</td>
+                        <td>Tertunda</td>
+                        <td class="negative"><i class="icon close"></i>Tidak dikenal</td>
+                    </tr>
+                    <tr class="positive">
+                        <td>Panel Kimia dan Hitung Darah Lengkap</td>
+                        <td>Berhasil</td>
+                        <td class="positive"><i class="icon checkmark"></i>Dalam Jangkauan</td>
+                    </tr>
+                    <tr class="positive">
+                        <td>C-Reactive Protein</td>
+                        <td>Berhasil</td>
+                        <td class="negative"><i class="icon close"></i>Negatif</td>
+                    </tr>
+                    <tr>
+                        <td>Hemoglobin A1C</td>
+                        <td>Terjadwal</td>
+                        <td>Tidak dikenal</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <!--row-->
+       <div class="row"></div>
+        {{!-- <div class="ui stackable grid"> --}}
+            <div class="eight wide column">
+                <table class="ui teal celled table">
+                    <thead>
+                        <tr>
+                            <th>Alergi</th>
+                            <th>Severity</th>
+                            <th>Catatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laktosa</td>
+                            <td>Tinggi</td>
+                            <td>Tidak ada</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>Penisilin</td>
+                            <td><i class="attention icon"></i> Tinggi</td>
+                            <td>Tidak ada</td>
+                        </tr>
+                        <tr>
+                            <td>Bulu Hewan Peliharaan</td>
+                            <td>Rendah</td>
+                            <td class="warning"><i class="attention icon"></i>Memiliki hewan peliharaan</td>
+                        </tr>
+                        <tr>
+                            <td>Kacang</td>
+                            <td>Sedang</td>
+                            <td>Tidak ada</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div><!--column-->
+            <div class="eight wide column">
+                <table class="ui teal celled table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Prosedur</th>
+                            <th>Alasan Prosedur</th>
+                            <th>Pemberi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>December 16, 2021</td>
+                            <td>Operasi lutut</td>
+                            <td>cedera olahraga</td>
+                            <td>Kaiser Permanente</td>
+                        </tr>
+                        <tr>
+                            <td>December 15, 2021</td>
+                            <td>X-Ray</td>
+                            <td>Pasien datang dengan keluhan nyeri lutut</td>
+                            <td>Kaiser Permanente</td>
+                        </tr>
+                        <tr>
+                            <td>December 14, 2021</td>
+                            <td>Biopsi</td>
+                            <td>Kista ditemukan</td>
+                            <td>Kaiser Permanente</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div><!--column-->
+        {{!-- </div> --}}
+    </div><!--ui stackable grid-->
+</div><!--ui main container-->

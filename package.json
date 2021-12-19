@@ -1,0 +1,38 @@
+{
+  "name": "dokterin-web",
+  "version": "1.0.0",
+  "description": "Dokterin singkatan dari Dokter Internet merupakan sistem manajemen pasien berbasis web yang memberikan dokter dan pasien akses mudah ke rekam medis dan memungkinkan pasien dan dokter untuk berkomunikasi melalui fitur obrolan.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [
+    "docter",
+    "patient"
+  ],
+  "author": "Alga Prananda",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.2",
+    "chart.js": "^2.6.0",
+    "colors": "^1.4.0",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "helper-moment": "^0.2.0",
+    "jquery": "^3.2.1",
+    "method-override": "^2.3.9",
+    "moment": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.4.7",
+    "sequelize-fixtures": "^0.6.0",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

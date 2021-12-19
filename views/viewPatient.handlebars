@@ -1,0 +1,62 @@
+{{> nav}}
+
+<div class="ui main container">
+    <div class="row">
+        <a href="/">
+            <div id="logout" class="ui basic button">Keluar</div>
+        </a>
+    </div>
+    <div class="row">
+        <h2 class="ui center aligned icon header">
+            <i class="circular users icon"></i>
+            {{patient.first_name}} {{patient.last_name}}
+        </h2>
+    </div>
+    <!--row-->
+    <br>
+    <br>
+    <div class="ui three column divided stackable grid">
+        <div class="stretched row">
+            <div class="column">
+                <div class="ui teal segment">
+                    <a href=""><img class="ui centered image" src="/assets/images/clipboard.png" height="150" width="150"></a>
+                    <a href=""><h4 class="ui center aligned header">Catatan Kesehatan</h4></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui teal segment">
+                    <a href=""><img class="ui centered image" src="/assets/images/prescription.svg" height="150" width="150"></a>
+                    <a href=""><h4 class="ui center aligned header">Resep</h4></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui teal segment">
+                   <a href=""><img class="ui centered image" src="/assets/images/stethoscope.svg" height="150" width="150"></a> 
+                   <a href=""><h4 class="ui center aligned header">Kondisi Aktif</h4></a>
+                </div>
+            </div>
+        </div><!--stretched row-->
+        <div class="stretched row">
+            <div class="column">
+                <div class="ui teal segment">
+                    <a href=""><img class="ui centered image" src="/assets/images/referral.svg" height="150" width="150"></a>
+                    <a href="">
+                        <h4 class="ui center aligned header">Rujukan</h4>
+                    </a>
+                </div>
+                </div>
+            <div class="column">
+                <div class="ui teal segment">
+                    <a href=""><img class="ui centered image" src="/assets/images/message.svg" height="150" width="150"></a>
+                    <a href=""><h4 class="ui center aligned header">Pesan</h4></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui teal segment">
+                    <a href=""><img class="ui centered image" src="/assets/images/notes.svg" height="150" width="150"></a>
+                    <a href=""><h4 class="ui center aligned header">Catatan</h4></a>
+                </div>
+            </div>
+        </div><!--stretched row-->
+    </div><!--ui three column divided grid-->
+</div><!--ui main container-->

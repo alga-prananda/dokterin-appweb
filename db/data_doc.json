@@ -1,0 +1,9 @@
+[{
+    "model": "doctors",
+    "data": {
+        "first_name": "Alga",
+        "last_name": "Prananda",
+        "telephone": 6282210200262,
+        "appointments": ""
+    }
+}]

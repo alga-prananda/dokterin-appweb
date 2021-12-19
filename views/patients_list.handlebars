@@ -1,0 +1,39 @@
+{{> nav}}
+
+<div class="main ui grid container" id="main-container">
+    <div class="ui container sixteen wide column">
+        <h1>Dasbor saya > Pasien saya</h1>
+        <h3>Pilih pasien di bawah ini.</h3>
+    </div>
+
+    <div class="sixteen wide column">
+        <table class="ui striped teal one column table" id="table">
+            <thead>
+                <tr id="hide" class="sixteen wide column">
+                    <th class="two wide column">Gambar</th>
+                    <th class="four wide column">Nama</th>
+                    <th class="two wide column">Jenis kelamin</th>
+                    <th class="four wide column">Pemberi</th>
+                    <th class="four wide column">Next Appt</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each patient}}
+                <tr class="sixteen wide column" id={{this.id}}>
+                    <td class="two wide column"><img class="ui avatar image" src="{{this.image}}"></td>
+                    <td class="four wide column"><a href="/patients/{{this.id}}">{{this.first_name}} {{this.last_name}}</a></td>
+                    <td class="two wide column">{{this.gender}}</td>
+                    <td class="four wide column">{{this.provider_name}}</td>
+                    <td class="four wide column">December 2, 2021</td>
+                </tr>
+
+                {{/each}}
+            </tbody>
+        </table>
+        <div id="add" class="ui basic buttons">
+            <div id="add" class="ui right button">
+                <a href="/patients/add"><i class="add user icon"></i> Tambah pasien</a>
+            </div>
+        </div>
+    </div>
+</div>

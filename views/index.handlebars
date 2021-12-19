@@ -1,0 +1,105 @@
+<style type="text/css">
+    body {
+        background-color: white;
+    }
+    body>.grid {
+        height: 50%;
+    }
+    .column {
+        max-width: 450px;
+    }
+    .ui.huge.header {
+        text-align: center;
+    }
+</style>
+
+<div class="ui basic segment">
+    <img class="ui medium centered image" src="assets/images/patientstack.svg">
+</div>
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <h2 class="ui red image header">
+            <div class="content">
+                Log-in to your account
+            </div>
+        </h2>
+        <form class="login ui form">
+            <div class="ui stacked segment">
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i>
+                        <input id="email-input" type="email" name="email" placeholder="Username">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i>
+                        <input id="password-input" type="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <div id="loginBtn" class="ui fluid large red submit button">Login</div>
+            </div>
+            <div class="ui error message"></div>
+        </form>
+        <div class="ui message">
+            New user? <a href="#">Create Your Account</a>
+        </div>
+    </div>
+</div>
+
+<div class="ui basic modal" id="incorrectLogin">
+  <div class="ui icon header">
+    <i class="archive icon"></i>
+    Incorrect Credentials
+  </div>
+  <div class="content">
+    <p>Please enter a correct Username & Password</p>
+  </div>
+  <div class="actions">
+    <div class="ui green ok inverted button">
+      <i class="checkmark icon"></i>
+      Try Again
+    </div>
+  </div>
+</div>
+
+<div class="ui basic modal" id="emptyLogin">
+  <div class="ui icon header">
+    <i class="archive icon"></i>
+    Empty Login
+  </div>
+  <div class="content">
+    <p>Please enter a Username & Password</p>
+  </div>
+  <div class="actions">
+    <div class="ui green ok inverted button">
+      <i class="checkmark icon"></i>
+      Try Again
+    </div>
+  </div>
+</div>
+
+<div class="ui basic modal" id="adminUser">
+  <div class="ui icon header">
+    <i class="archive icon"></i>
+   Admin?
+  </div>
+  <div class="content">
+    <p>Are you an admin user?</p>
+  </div>
+  <div class="actions">
+    <div class="ui red basic cancel inverted button">
+      <i class="remove icon"></i>
+      No
+    </div>
+    <div class="ui green ok inverted button">
+       <a href="/admin"><i class="checkmark icon"></i>
+      Yes
+    </div>
+  </div>
+</div>
+<div class="ui vertical footer segment">
+    <h6 class="ui aligned center header">
+        <p>Copyright &copy; 2021 Dokterin Appweb</p>
+    </h6>
+</div>

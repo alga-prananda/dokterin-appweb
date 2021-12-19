@@ -1,0 +1,34 @@
+{{> patientnav}}
+
+<div class="main ui grid container">
+    <div class="ui container eight wide column">
+        <h1 class="ui dividing header">Mengobrol</h1>
+        <div class="ui comments">
+            <div id="main-container">
+                {{#each message}}
+                <div class="comment">
+                    <a class="avatar">
+                    <img src="{{this.avatar}}">
+                    </a>
+                    <div class="content">
+                        <a class="author">{{this.username}}</a>
+                        <div class="metadata">
+                            <span class="date">{{this.createdAt}}</span>
+                        </div>
+                        <div class="text">
+                            {{this.message}}
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            <form class="ui reply form" id="messageForm">
+                <div class="field">
+                    <textarea id="message" required></textarea>
+                </div>
+                <div id="typingmessage"></div>
+                <button type="submit" class="ui teal labeled submit icon button"> <i class="icon edit"></i> Kirim</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,131 @@
+{{> nav}}
+
+<div class="main ui grid container">
+
+    <div class="ui container sixteen wide column">
+        <h1>Tambah Pasien Baru</h1>
+    </div>
+    <div class="sixteen wide column">
+        <form class="ui form" action="/patients/add" method="post">
+            <h4 class="ui dividing header">Informasi Umum</h4>
+            <div class="field">
+                <div class="fields">
+                    <div class="six wide field">
+                        <label>Nama depan</label>
+                        <input type="text" name="firstName" placeholder="First Name">
+                    </div>
+                    <div class="six wide field">
+                        <label>Nama belakang</label>
+                        <input type="text" name="lastName" placeholder="Last Name">
+                    </div>
+                    <div class="four wide field">
+                        <label>Tanggal lahir</label>
+                        <input type="text" id="birth-date" name="dob" placeholder="MM/DD/YYYY">
+                    </div>
+                    <div class="two wide field">
+                        <label>Jenis kelamin</label>
+                        <select class="ui fluid dropdown" name="gender">
+                            <option value="">Pilih</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="O">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="fields">
+                    <div class="eight wide field">
+                        <label>Alamat jalan</label>
+                        <input type="text" name="streetAddress">
+                    </div>
+                    <div class="eight wide field">
+                        <label>Kota</label>
+                        <input type="text" name="city">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="fields">
+                    <div class="four wide field">
+                        <label>Negara</label>
+                        <select class="ui fluid dropdown" name="state" id="state">
+                            <option value="">Pilih Negara</option>
+                            <option value="BD">Brunei Darussalam</option>
+                            <option value="FA">Filipina</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="LA">Laos</option>
+                            <option value="KA">Kamboja</option>
+                            <option value="ML">Malaysia</option>
+                            <option value="MY">Myanmar</option>
+                            <option value="SA">Singapura</option>
+                        </select>
+                    </div>
+                    <div class="five wide field">
+                        <label>Zip Code</label>
+                        <input type="text" pattern="[0-9]{5}" name="zip" placeholder="Zip">
+                    </div>
+                    <div class="five wide field">
+                        <label>Nomor telepon</label>
+                        <input type="text" name="telephone">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="fields">
+                    <div class="eight wide field">
+                        <label>Tautan Gambar Profil</label>
+                        <input type="text" name="image">
+                    </div>
+                </div>
+            </div>
+            <h4 class="ui dividing header">Informasi kesehatan</h4>
+            <div class="field">
+                <div class="fields">
+                    <div class="six wide field">
+                        <label>Nama Penyedia</label>
+                        <input type="text" name="providerName">
+                    </div>
+                    <div class="three wide field">
+                        <label>Tinggi</label>
+                        <input type="text" name="height">
+                    </div>
+                    <div class="three wide field">
+                        <label>Berat</label>
+                        <input type="text" name="weight">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="fields">
+                    <div class="eight wide field">
+                        <label>Alergi</label>
+                        <input type="text" name="allergies">
+                    </div>
+                    <div class="eight wide field">
+                        <label>Prosedur</label>
+                        <input type="text" name="procedures">
+                    </div>
+                </div>
+            </div>
+             <h4 class="ui dividing header">Kontak darurat</h4>
+            <div class="field">
+                <div class="fields">
+                    <div class="eight wide field">
+                        <label>Nama Kontak</label>
+                        <input type="text" name="emergencyContactName">
+                    </div>
+                    <div class="eight wide field">
+                        <label>Kontak nomor telepon</label>
+                        <input type="text" name="emergencyContactNumber">
+                    </div>
+                    </div>
+            </div>
+            <div>
+                <button type="submit" class="ui blue basic button" id="add-patient-button"><i class="add user icon"></i>Tambahkan Pasien</button>
+                <button class="ui grey basic button" id="autofill">Isi Otomatis</button>
+            </div>
+    </div>
+    </form>
+</div>

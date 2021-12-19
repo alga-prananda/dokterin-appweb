@@ -1,0 +1,71 @@
+{{> patientnav }}
+
+<!--HEADER-->
+<div class="main ui stackable grid container" id="main-container">
+    <div class="ui container sixteen wide column">
+        <div class="ui raised teal segment">
+            <div class="row">
+                <h1 class="ui header">
+                    <img src="{{patient.image}}" class="ui circular image">{{patient.first_name}} {{patient.last_name}}'s Lab Results
+                    <a href="/">
+                        <div id="logout" class="ui basic button">Keluar</div>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="eight wide centered column">
+    {{> labresults}}
+</div>
+
+<div class="eight wide centered column">
+        <table class="ui teal celled table">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Tes</th>
+                    <th>Status</th>
+                    <th>Hasil</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>December 2, 2021</td>
+                    <td>Hitung Darah Putih</td>
+                    <td>Tertunda</td>
+                    <td class="negative"><i class="icon close"></i>Tidak dikenal</td>
+                </tr>
+                <tr class="positive">
+                    <td>December 5, 2021</td>
+                    <td>Panel Kimia dan Hitung Darah Lengkap</td>
+                    <td>Berhasil</td>
+                    <td class="positive"><i class="icon checkmark"></i>Dalam Jangkauan</td>
+                </tr>
+                <tr class="positive">
+                    <td>December 10, 2021</td>
+                    <td>C-Reactive Protein</td>
+                    <td>Berhasil</td>
+                    <td class="negative"><i class="icon close"></i>Negatif</td>
+                </tr>
+                <tr>
+                    <td>December 11, 2021</td>
+                    <td>Hemoglobin A1C</td>
+                    <td>Terjadwal</td>
+                    <td>Tidak dikenal</td>
+                </tr>
+                <tr>
+                    <td>December 13, 2021</td>
+                    <td>Elektrolit</td>
+                    <td>Terjadwal</td>
+                    <td>Tidak dikenal</td>
+                </tr>
+                <tr>
+                    <td>December 7, 2021</td>
+                    <td>Panel Hati</td>
+                    <td>Terjadwal</td>
+                    <td>Tidak dikenal</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+</div><!--ui container-->

@@ -1,0 +1,152 @@
+{{> patientnav}}
+
+<div class="main ui stackable grid container" id="main-container">
+    <div class="ui container sixteen wide column">
+        <div class="ui raised teal segment">
+            <div class="row">
+                <h1 class="ui header">
+                    <img src="{{patient.image}}" class="ui circular image"> Welcome {{patient.first_name}} {{patient.last_name}}
+                    <a href="/">
+                        <div id="logout" class="ui basic button">Keluar</div>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="five wide column">
+            <div class="ui medium header">Dokter Saya</div>
+            <div class="ui tiny aligned center cards">
+                <div class="teal card">
+                    <div class="content">
+                        <img class="right floated mini ui image" src="../assets/images/person.png">
+                        <div class="header">
+                            Dr. Alga Prananda, S.T
+                        </div>
+                        <div class="meta">
+                            Dokter Utama Kedokteran Keluarga
+                        </div>
+                    </div>
+                </div>
+                <div class="teal card">
+                    <div class="content">
+                        <img class="right floated mini ui image" src="../assets/images/person.png">
+                        <div class="header">
+                            Dr. Andhika Pratama
+                        </div>
+                        <div class="meta">
+                            Pengobatan Olahraga Rujukan/Terapi Fisik
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="five wide column">
+            <div class="ui piled segment">
+                <h4 class="ui header">Informasi Umum</h4>
+                <ul>
+                    <li>Tanggal lahir: {{patient.dob}}</li>
+                    <li>Jenis kelamin: {{patient.gender}}</li>
+                    <li>Alamat: 4{{patient.street_address}}</li>
+                    <li>{{patient.city}},{{patient.state}},{{patient.zip}}</li>
+                    <li>Telepon: {{patient.telephone}}</li>
+                    <li>Tinggi:{{patient.height}}</li>
+                    <li>Berat:{{patient.weight}}</li>
+                    <li>Pemberi: {{patient.provider_name}}</li>
+                    <li>Kontak darurat: {{patient.emergency_contact_name}}</li>
+                    <li>Nomor kontak darurat: {{patient.emergency_contact_number}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="six wide column">
+            <table class="ui teal table" id="table">
+                <thead>
+                    <tr>
+                        <th><i class="alarm icon"></i>Pengingat</th>
+                        <th id="hide">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vaksin flu</td>
+                        <td class="positive"><i class="icon checkmark"></td>
+                </tr>
+                <tr>
+                    <td>Pembaruan Resep untuk: Hydrochlorothiazide</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tetanus, Difteri, Pertusis (Td, Tdap) Vaksin</td>
+                    <td class="positive"><i class="icon checkmark"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="ui sixteen wide column">  
+        <table class="ui teal table" id="table">
+            <thead>
+                <tr>
+                    <th class="three wide"><i class="alarm icon"></i>Janji Mendatang</th>
+                            <th class="three wide"></th>
+                            <th class="five wide"></th>
+                            <th class="five wide"></th>
+                    </tr>
+                    <tr id="hide">
+                        <th class="three wide">Tanggal</th>
+                        <th class="three wide">Jenis Janji Temu</th>
+                        <th class="five wide">Dokter</th>
+                        <th class="five wide">Catatan Dari Dokter Saya</th>
+                    </tr>
+            </thead>
+            <tbody>
+                        <tr>
+                            <td>December 24, 2021</td>
+                            <td>Konsultasi</td>
+                            <td>Andhika Pratama</td>
+                            <td>Kunjungan pertama. Harap tiba 15 menit lebih awal untuk mengurus dokumen.</td>
+                        </tr>
+                        <tr>
+                            <td>December 21, 2021</td>
+                            <td>Fisik Tahunan</td>
+                            <td>Dr. Alga Prananda</td>
+                            <td>Tidak ada</td>
+                        </tr>
+                        <tr>
+                            <td>December 5, 2021</td>
+                            <td>Terapi fisik</td>
+                            <td>Dr. Alga Prananda</td>
+                            <td>Rujukan untuk cedera olahraga</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+        <div class="ui sixteen wide column">
+            <table class="ui teal table" id="table">
+                <thead>
+                    <tr>
+                        <th class="three wide">Resep</th>
+                        <th class="three wide"></th>
+                        <th class="five wide"></th>
+                        <th class="five wide"></th>
+                    </tr>
+                    <tr id="hide">
+                        <th class="three wide">Nama</th>
+                        <th class="three wide">Tanggal yang ditentukan</th>
+                        <th class="five wide">Dosis</th>
+                        <th class="five wide">Tanggal Isi Ulang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lipitor {{prescription.med_name}}</td>
+                        <td>December 21, 2021 {{prescription.prescribed_date}}</td>
+                        <td>10mg/day {{prescription.dose}}</td>
+                        <td>December 21, 2021 {{prescription.renew_date}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
