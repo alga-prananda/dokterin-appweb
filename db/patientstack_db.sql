@@ -25,7 +25,7 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `patientstack_db`.`patients`
+-- Table `patientstack_db`.`patientss`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `patientstack_db`.`patients` (
   `id` INT NOT NULL AUTO_INCREMENT,
