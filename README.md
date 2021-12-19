@@ -8,7 +8,7 @@ Dokterin singkatan dari Dokter Internet merupakan sistem manajemen pasien berbas
 
 ### Pictures
 
-![Models](./public/images/index.jpeg);
+![Models](./public/assets/images/index.jpeg);
 
 # Packages Used
 
